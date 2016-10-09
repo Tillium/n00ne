@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Sat, 08 Oct 2016 17:26:19 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+       <title>n00ne</title>
+	<style> 
+ 	  body {background-color: white;}
+ 	  h1 {color: white;font-family:rockwell;}
+	  h3 {color: white;font-family:rockwell;}
+	  a {color: white; text-decoration: none;font-family:rockwell;}
+	  p {font-family:rockwell; font-size:25px;}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3498db;
+}
+
+.dropdown {
+    float: center;
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute; top:110px; left:375px; width:150px; height:100px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 15px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+</style>
+
+<div class="dropdown">
+  <div id="chatDropdown" class="dropdown-content">
+    <a href="#">Login</a>
+    <a href="#">Anonymous</a>
+  </div>
+  
+</div>
+
+		<div style="width:$(window).width();height:100px;border:1px solid #3498db; background: linear-gradient(90deg, #3498db , lightgray, white);"></div>
+		<div style="position: absolute; top:0px; left:10px; width:200px; height:25px; font-size:35px;"><h1><a href="nooneTest.html">MentorBot</a></h1></div>
+		<div onmouseover="myFunction()"; style="position: absolute; top:35px; left:450px; width:125px; height:25px; font-size:35px"><h3>Chat</h3></div>
+		<div style="position: absolute; top:35px; left:700px; width:200px; height:25px; font-size:35px"><h3><a href="About.html">About</a></h3></div>
+		<div style="position: absolute; top:35px; left:950px; width:200px; height:25px; font-size:35px"><h3><a href="Contact.html">Contact</a></h3></div>
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("chatDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onhover = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+  <body>
+<p>MentorBot was designed by three Hiram College students for the 2016 Kent Hack Enough hackathon. While the original idea for MentorBot was to help victims of cyberbullying deal
+ with the aftermath of cyberbullying is has evovled into an AI designed to help people talk about their problems. MentorBot is someone to talk to when either no one else 
+is there or you want to talk to someone but don't want a real person. We understand that talking about how you feel and the issues you are facing isn't easy so we hope to alieve some
+of that uncomfortableness with MentorBot. While MentorBot offers unlimited anonymous chat sessions, sessions can be saved and linked to an account at a user's request.</p>
+  </body>

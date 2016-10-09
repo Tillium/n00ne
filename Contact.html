@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Sat, 08 Oct 2016 17:47:39 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+           <title>n00ne</title>
+	<style> 
+ 	  body {background-color: white;}
+ 	  h1 {color: white;font-family:rockwell;}
+	  h3 {color: white;font-family:rockwell;}
+	  a {color: white; text-decoration: none;font-family:rockwell;}
+	  p {font-family:rockwell; font-size:25px;}
+	  
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3498db;
+}
+
+.dropdown {
+    float: center;
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute; top:110px; left:375px; width:150px; height:100px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 15px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+</style>
+
+<div class="dropdown">
+  <div id="chatDropdown" class="dropdown-content">
+    <a href="#">Login</a>
+    <a href="#">Anonymous</a>
+  </div>
+  
+</div>
+
+		<div style="width:$(window).width();height:100px;border:1px solid #3498db; background: linear-gradient(90deg, #3498db , lightgray, white);"></div>
+		<div style="position: absolute; top:0px; left:10px; width:200px; height:25px; font-size:35px;"><h1><a href="nooneTest.html">n00ne</a></h1></div>
+		<div onmouseover="myFunction()"; style="position: absolute; top:35px; left:450px; width:125px; height:25px; font-size:35px"><h3>Chat</h3></div>
+		<div style="position: absolute; top:35px; left:700px; width:200px; height:25px; font-size:35px"><h3><a href="About.html">About</a></h3></div>
+		<div style="position: absolute; top:35px; left:950px; width:200px; height:25px; font-size:35px"><h3><a href="Contact.html">Contact</a></h3></div>
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("chatDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onhover = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+  <body>
+<p>If you have any questions, concerns, or suggestions we can be reached at [insert support email here]. We appreciate and thank you for your comments and constructive criticisms</p>
+<p align="center"> <img src="Thank-You-PNG.png"  /></p>
+
+  </body>
